@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Projet APP Météo — BOURGOIN RALPH</title>
+    <meta name="description" content="Documentation détaillée du projet d'application météo avec géolocalisation et API OpenWeatherMap." />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💼</text></svg>">
+  </head>
+  <body id="top" class="bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100">
+    <!-- Header / Nav -->
+    <header class="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/90 dark:supports-[backdrop-filter]:bg-gray-950/70 dark:bg-gray-950/90 border-b border-gray-200 dark:border-gray-800">
+      <nav class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <a href="/index.html" class="font-extrabold tracking-tight text-xl">
+            <span class="text-blue-600">Portfolio</span><span class="text-gray-900 dark:text-gray-100"> BOURGOIN RALPH </span>
+          </a>
+          <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
+            <li><a class="nav-link hover:text-blue-600" href="/index.html#a-propos">Mon profil</a></li>
+            <li><a class="nav-link hover:text-blue-600" href="/index.html#mon-bts">Mon BTS</a></li>
+            <li><a class="nav-link hover:text-blue-600" href="/index.html#langages-outils">Langages & Outils</a></li>
+            <li><a class="nav-link hover:text-blue-600" href="/index.html#parcours">Parcours scolaire</a></li>
+            <li><a class="nav-link hover:text-blue-600" href="/index.html#veille">Veille technologique</a></li>
+            <li><a class="nav-link hover:text-blue-600" href="/index.html#projets">Projets</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="bg-gray-50 dark:bg-gray-900/50 min-h-screen">
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-16">
+        <div class="flex items-baseline justify-between">
+            <h1 class="text-3xl font-bold tracking-tight">Projet : APP Météo</h1>
+            <a href="/projets.html" class="text-sm text-blue-600 hover:underline">← Retour aux projets</a>
+        </div>
+        
+        <div class="mt-8 space-y-10">
+            <article class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-6">
+                <h2 class="text-xl font-semibold mb-3">Aperçu du projet</h2>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                    Voici une capture d'écran de l'application en fonctionnement.
+                </p>
+                <div class="aspect-video rounded-lg border border-gray-200 dark:border-gray-800 overflow-hidden">
+                    <img src="/IMG/Capture d’écran 2026-03-15 à 15.47.21.png" alt="Aperçu de l'application météo" class="w-full h-full object-cover">
+                </div>
+            </article>
+
+            <article class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-6">
+                <h2 class="text-xl font-semibold mb-3">Description et Fonctionnalités</h2>
+                <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                    Weather Time est une application web front-end qui utilise l'API de géolocalisation du navigateur pour récupérer les coordonnées de l'utilisateur. Ces coordonnées sont ensuite utilisées pour interroger l'API OpenWeatherMap et afficher en temps réel la météo locale.
+                </p>
+                <h3 class="font-semibold mt-4 mb-2">Fonctionnalités clés :</h3>
+                <ul class="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-1">
+                    <li><strong>Géolocalisation en un clic :</strong> Un simple bouton pour lancer la détection de la position.</li>
+                    <li><strong>Affichage des coordonnées :</strong> Affiche la latitude, la longitude et la précision.</li>
+                    <li><strong>Météo actuelle :</strong> Présente la ville, la température, une description et une icône.</li>
+                    <li><strong>Gestion des états :</strong> Affiche des messages clairs pendant le chargement ou en cas d'erreur.</li>
+                </ul>
+            </article>
+
+            <article class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-6">
+                <h2 class="text-xl font-semibold mb-3">Technologies utilisées</h2>
+                <div class="flex flex-wrap gap-3 text-sm">
+                    <span class="flex items-center gap-2 rounded-md border px-3 py-2"><i class="devicon-html5-plain colored text-xl"></i> HTML5</span>
+                    <span class="flex items-center gap-2 rounded-md border px-3 py-2"><i class="devicon-css3-plain colored text-xl"></i> CSS3</span>
+                    <span class="flex items-center gap-2 rounded-md border px-3 py-2"><i class="devicon-javascript-plain colored text-xl"></i> JavaScript (ES6+)</span>
+                    <span class="flex items-center gap-2 rounded-md border px-3 py-2">🌐 API Web (Geolocation, Fetch)</span>
+                    <span class="flex items-center gap-2 rounded-md border px-3 py-2">☁️ API OpenWeatherMap</span>
+                    <span class="flex items-center gap-2 rounded-md border px-3 py-2"><i class="devicon-git-plain colored text-xl"></i> Git & GitHub</span>
+                </div>
+                <div class="mt-6 pt-6 border-t border-gray-200 dark:border-gray-800">
+                    <h3 class="font-semibold mb-3 text-base">Code Source</h3>
+                    <a href="https://github.com/RALPHASSANE/APP-m-t-o" target="_blank" rel="noopener noreferrer" class="inline-block rounded-lg bg-gray-100 dark:bg-gray-800 px-3 py-1 font-medium text-sm hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+                        Voir sur GitHub
+                    </a>
+                </div>
+            </article>
+
+            <article class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-6">
+                <h2 class="text-xl font-semibold mb-3">Défis et Apprentissages</h2>
+                <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                    Ce projet a été l'occasion de mettre en pratique plusieurs concepts clés du développement web :
+                </p>
+                <ul class="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2 mt-2">
+                    <li><strong>Gestion de l'asynchronisme :</strong> Utilisation de `fetch` avec les Promises (`.then()` et `.catch()`) pour enchaîner les appels API.</li>
+                    <li><strong>Interaction avec les API :</strong> Lecture de documentation, construction d'URL de requête avec des paramètres dynamiques et traitement de la réponse JSON.</li>
+                    <li><strong>Amélioration de l'Expérience Utilisateur (UX) :</strong> Implémentation d'un conteneur de statut pour informer l'utilisateur du chargement ou des erreurs.</li>
+                    <li><strong>Résolution de problèmes (Versioning) :</strong> Confrontation aux défis de configuration de Git/GitHub (erreur 403) et apprentissage de l'utilisation d'un Personal Access Token (PAT).</li>
+                </ul>
+            </article>
+        </div>
+      </div>
+    </main>
+
+    <footer class="border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8 text-sm text-gray-600 dark:text-gray-400 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p>© <span id="year"></span> — Portfolio BTS SIO SLAM</p>
+        <p><a href="#top" class="hover:underline">Haut de page ↑</a></p>
+      </div>
+    </footer>
+    <script src="/dist/ASSET /main.js" defer></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </body>
+</html>

@@ -8,6 +8,18 @@
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="dist/output.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💼</text></svg>">
+    <style>
+      /* Animation du menu hamburger */
+      #menuBtn.active #bar1 {
+        transform: rotate(45deg) translate(6px, 6px);
+      }
+      #menuBtn.active #bar2 {
+        opacity: 0;
+      }
+      #menuBtn.active #bar3 {
+        transform: rotate(-45deg) translate(6px, -6px);
+      }
+    </style>
   </head>
   <body class="bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100">
     <header class="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/90 dark:supports-[backdrop-filter]:bg-gray-950/70 dark:bg-gray-950/90 border-b border-gray-200 dark:border-gray-800">
@@ -16,6 +28,17 @@
           <a href="/index.html" class="font-extrabold tracking-tight text-xl">
             <span class="text-blue-600">Portfolio</span><span class="text-gray-900 dark:text-gray-100"> BOURGOIN RALPH </span>
           </a>
+
+          <!-- Menu hamburger mobile -->
+          <button id="menuBtn" class="md:hidden p-2 -mr-2">
+            <div class="w-6 h-5 relative flex flex-col justify-between">
+              <span id="bar1" class="w-full h-0.5 bg-gray-600 dark:bg-gray-300 transition-all duration-300"></span>
+              <span id="bar2" class="w-full h-0.5 bg-gray-600 dark:bg-gray-300 transition-all duration-300"></span>
+              <span id="bar3" class="w-full h-0.5 bg-gray-600 dark:bg-gray-300 transition-all duration-300"></span>
+            </div>
+          </button>
+
+          <!-- Menu desktop -->
           <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
             <li><a class="nav-link hover:text-blue-600" href="/index.html#a-propos">Mon profil</a></li>
             <li><a class="nav-link hover:text-blue-600" href="/index.html#mon-bts">Mon BTS</a></li>
@@ -24,17 +47,95 @@
             <li><a class="nav-link hover:text-blue-600" href="/index.html#veille">Veille technologique</a></li>
             <li><a class="nav-link hover:text-blue-600" href="/index.html#projets">Projets</a></li>
           </ul>
+
+          <!-- Menu mobile -->
+          <div id="mobileMenu" class="hidden md:hidden absolute top-full left-0 right-0 bg-white dark:bg-gray-950 border-b border-gray-200 dark:border-gray-800 shadow-lg z-50">
+            <nav class="px-4 py-4 space-y-3">
+              <a href="/index.html#a-propos" class="block py-2 px-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors nav-link-mobile">Mon profil</a>
+              <a href="/index.html#mon-bts" class="block py-2 px-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors nav-link-mobile">Mon BTS</a>
+              <a href="/index.html#langages-outils" class="block py-2 px-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors nav-link-mobile">Langages & Outils</a>
+              <a href="/index.html#parcours" class="block py-2 px-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors nav-link-mobile">Parcours scolaire</a>
+              <a href="/index.html#veille" class="block py-2 px-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors nav-link-mobile">Veille technologique</a>
+              <a href="/index.html#projets" class="block py-2 px-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors nav-link-mobile">Projets</a>
+            </nav>
+          </div>
         </div>
       </nav>
     </header>
     <section id="veille-preuves" class="scroll-mt-24 bg-gray-50 dark:bg-gray-900/50 border-y border-gray-200 dark:border-gray-800 min-h-screen">
       <div class="mx-auto max-w-4xl px-4 sm:px-8 py-16">
-        <h1 class="text-3xl font-bold tracking-tight mb-8 text-center">Veille Technologique </h1>
-        
+        <h1 class="text-3xl font-bold tracking-tight mb-8 text-center">Veille Technologique</h1>
+
+        <p class="text-center text-sm text-gray-600 dark:text-gray-300 mb-8">Veille Technologique — Impact de l'IA sur les développeurs juniors et leur recrutement (Avril 2026).</p>
+
+        <!-- Section 1: Présentation de la problématique -->
+        <section class="mb-12">
+          <div class="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-6 shadow-sm">
+            <h2 class="text-2xl font-bold mb-4 text-blue-600 dark:text-blue-400">1. Problématique de la veille</h2>
+            <div class="prose dark:prose-invert max-w-none">
+              <p class="text-lg leading-relaxed">
+                L'essor de l'IA générative bouleverse profondément le monde du développement logiciel. Si les outils comme GitHub Copilot, ChatGPT ou Claude Code apportent un gain de productivité indéniable, ils soulèvent des questions cruciales sur la place des profils juniors : comment apprennent-ils ? Sont-ils encore recrutés ? Quelles compétences doivent-ils développer ?
+              </p>
+              <p class="mt-4">
+                Cette veille technologique explore l'impact de l'IA sur les développeurs juniors, leur formation et leur recrutement, en s'appuyant sur des sources récentes et des études de cas concrets.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 2: Documentation complète -->
+        <section class="mb-12">
+          <div class="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-6 shadow-sm">
+            <h2 class="text-2xl font-bold mb-4 text-blue-600 dark:text-blue-400">2. Documentation complète</h2>
+            <div class="border border-gray-300 dark:border-gray-600 rounded-lg overflow-hidden">
+              <iframe src="docs/veille-ia-developpeurs-juniors.pdf" width="100%" height="800" class="border-0"></iframe>
+            </div>
+            <p class="mt-4 text-sm text-gray-600 dark:text-gray-400">
+              📄 Document réalisé dans le cadre de l'épreuve E5 — BTS SIO option SLAM — 2026
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 3: Screenshots Google Alerts -->
+        <section class="mb-12">
+          <div class="rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-6 shadow-sm">
+            <h2 class="text-2xl font-bold mb-4 text-blue-600 dark:text-blue-400">3. Outils de veille - Google Alerts</h2>
+            <p class="mb-6 text-gray-700 dark:text-gray-200">
+              Screenshots des alertes Google configurées pour suivre l'actualité sur l'impact de l'IA dans le développement logiciel :
+            </p>
+            <div class="grid gap-6 md:grid-cols-1">
+              <figure class="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-800">
+                <img src="IMG/google-alert-1.png" alt="Google Alert n°1 — Développeurs juniors & IA" class="w-full h-auto" />
+                <figcaption class="p-3 bg-gray-50 dark:bg-gray-800 text-sm text-gray-600 dark:text-gray-300">
+                  <strong>Google Alert n°1</strong> — Développeurs juniors & IA
+                </figcaption>
+              </figure>
+              <figure class="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-800">
+                <img src="IMG/google-alert-2.png" alt="Google Alert n°2 — Recrutement juniors & IA" class="w-full h-auto" />
+                <figcaption class="p-3 bg-gray-50 dark:bg-gray-800 text-sm text-gray-600 dark:text-gray-300">
+                  <strong>Google Alert n°2</strong> — Recrutement juniors & IA
+                </figcaption>
+              </figure>
+              <figure class="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-800">
+                <img src="IMG/google-alert-3.png" alt="Google Alert n°3 — Microsoft / Amazon / Formation juniors" class="w-full h-auto" />
+                <figcaption class="p-3 bg-gray-50 dark:bg-gray-800 text-sm text-gray-600 dark:text-gray-300">
+                  <strong>Google Alert n°3</strong> — Microsoft / Amazon / Formation juniors
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
       </div>
     </section>
-    </footer>
-    <script src="/dist/ASSET /main.js" defer></script>
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <!-- Bouton retour à l'accueil -->
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8 text-center">
+      <a href="index.html#veille" class="inline-flex items-center gap-2 rounded-xl bg-blue-600 text-white px-6 py-3 font-semibold shadow hover:bg-blue-700 transition">
+        ← Retour à l'accueil
+      </a>
+    </div>
+    <script>
+      const yearElem = document.getElementById('year');
+      if (yearElem) yearElem.textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>

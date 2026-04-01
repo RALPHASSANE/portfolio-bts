@@ -9,10 +9,14 @@ const mobileMenu = document.getElementById('mobileMenu');
 if (menuBtn && mobileMenu) {
   menuBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
+    menuBtn.classList.toggle('active');
   });
   // Ferme le menu mobile au clic d’un lien
   mobileMenu.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+    a.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      menuBtn.classList.remove('active');
+    });
   });
 }
 

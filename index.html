@@ -8,6 +8,18 @@
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="dist/output.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💼</text></svg>">
+    <style>
+      /* Animation du menu hamburger */
+      #menuBtn.active #bar1 {
+        transform: rotate(45deg) translate(6px, 6px);
+      }
+      #menuBtn.active #bar2 {
+        opacity: 0;
+      }
+      #menuBtn.active #bar3 {
+        transform: rotate(-45deg) translate(6px, -6px);
+      }
+    </style>
   </head>
   <body class="bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100">
     <!-- Header / Nav -->
@@ -17,6 +29,17 @@
           <a href="#top" class="font-extrabold tracking-tight text-xl">
             <span class="text-blue-600">Portfolio</span><span class="text-gray-900 dark:text-gray-100"> BOURGOIN RALPH </span>
           </a>
+
+          <!-- Menu hamburger mobile -->
+          <button id="menuBtn" class="md:hidden p-2 -mr-2">
+            <div class="w-6 h-5 relative flex flex-col justify-between">
+              <span id="bar1" class="w-full h-0.5 bg-gray-600 dark:bg-gray-300 transition-all duration-300"></span>
+              <span id="bar2" class="w-full h-0.5 bg-gray-600 dark:bg-gray-300 transition-all duration-300"></span>
+              <span id="bar3" class="w-full h-0.5 bg-gray-600 dark:bg-gray-300 transition-all duration-300"></span>
+            </div>
+          </button>
+
+          <!-- Menu desktop -->
           <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
             <li><a class="nav-link hover:text-blue-600" href="#a-propos">Mon profil</a></li>
             <li><a class="nav-link hover:text-blue-600" href="#mon-bts">Mon BTS</a></li>
@@ -25,6 +48,18 @@
             <li><a class="nav-link hover:text-blue-600" href="#veille">Veille technologique</a></li>
             <li><a class="nav-link hover:text-blue-600" href="#projets">Projets</a></li>
           </ul>
+
+          <!-- Menu mobile -->
+          <div id="mobileMenu" class="hidden md:hidden absolute top-full left-0 right-0 bg-white dark:bg-gray-950 border-b border-gray-200 dark:border-gray-800 shadow-lg z-50">
+            <nav class="px-4 py-4 space-y-3">
+              <a href="#a-propos" class="block py-2 px-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors nav-link-mobile">Mon profil</a>
+              <a href="#mon-bts" class="block py-2 px-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors nav-link-mobile">Mon BTS</a>
+              <a href="#langages-outils" class="block py-2 px-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors nav-link-mobile">Langages & Outils</a>
+              <a href="#parcours" class="block py-2 px-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors nav-link-mobile">Parcours scolaire</a>
+              <a href="#veille" class="block py-2 px-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors nav-link-mobile">Veille technologique</a>
+              <a href="#projets" class="block py-2 px-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors nav-link-mobile">Projets</a>
+            </nav>
+          </div>
         </div>
       </nav>
     </header>

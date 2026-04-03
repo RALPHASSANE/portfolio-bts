@@ -92,16 +92,11 @@
         <div class="grid md:grid-cols-[1fr,1.2fr] gap-10 items-center">
           <div class="rounded-2xl border border-gray-200 dark:border-gray-800 p-6 md:p-8 bg-white/70 dark:bg-gray-950/70 backdrop-blur">
             <div class="flex items-center gap-4">
-              <picture>
-                <source type="image/webp" srcset="/IMG/téléchargement-320.webp 320w, /IMG/téléchargement-640.webp 640w, /IMG/téléchargement-1280.webp 1280w" sizes="(max-width: 640px) 48px, (max-width: 768px) 64px, 80px">
-                <img src="/IMG/téléchargement.png"
-                     srcset="/IMG/téléchargement-320.png 320w, /IMG/téléchargement-640.png 640w, /IMG/téléchargement-1280.png 1280w"
-                     sizes="(max-width: 640px) 48px, (max-width: 768px) 64px, 80px"
-                     width="80" height="80"
-                     alt="Photo de profil — Ralph Bourgoin"
-                     class="h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 rounded-full object-cover border border-gray-200 dark:border-gray-800"
-                     loading="lazy" decoding="async">
-              </picture>
+              <img src="IMG/téléchargement.png"
+                   width="80" height="80"
+                   alt="Photo de profil — Ralph Bourgoin"
+                   class="h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 rounded-full object-cover border border-gray-200 dark:border-gray-800"
+                   loading="lazy" decoding="async">
               <div>
                 <h2 class="text-3xl font-extrabold tracking-tight">Mon profil</h2>
               </div>
@@ -146,84 +141,84 @@
     </section>
     <!-- Langages & Outils -->
     <section id="langages-outils" class="scroll-mt-24 bg-gray-50 dark:bg-gray-900/50 border-y border-gray-200 dark:border-gray-800">
-      <div class="mx-auto max-w-4xl px-4 sm:px-8 py-16">
+      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-16">
         <h2 class="text-3xl font-bold tracking-tight mb-12 text-center">Langages & Outils</h2>
         <div class="grid md:grid-cols-2 gap-12">
           <!-- Je maîtrise -->
-          <div>
-            <h3 class="font-semibold text-blue-600 mb-8 flex items-center gap-4 justify-center md:justify-start">
-              <span class="h-2 w-2 rounded-full bg-blue-600 mr-4"></span>
-              <span class="block text-lg md:text-xl leading-tight">Je maîtrise</span>
+          <div class="mb-8 md:mb-0">
+            <h3 class="font-semibold text-blue-600 mb-6 inline-flex items-center gap-3">
+              <span class="h-3 w-3 rounded-full bg-blue-600"></span>
+              <span class="text-lg">Je maîtrise</span>
             </h3>
-            <ul class="grid grid-cols-2 sm:grid-cols-3 gap-6">
-              <li class="flex flex-col items-center justify-center aspect-square w-full max-w-[110px] mx-auto rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 hover:border-blue-600 transition-all duration-300 hover:scale-105">
-                <span class="flex items-center justify-center w-full h-full">
-                  <i class="devicon-html5-plain colored text-4xl sm:text-5xl md:text-6xl"></i>
+            <ul class="grid grid-cols-3 gap-4">
+              <li class="flex flex-col items-center justify-center rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-3 hover:border-blue-600 hover:shadow-md dark:hover:shadow-blue-900/30 transition-all duration-300 hover:scale-105 cursor-pointer">
+                <span class="flex items-center justify-center mb-2">
+                  <i class="devicon-html5-plain colored text-4xl"></i>
                 </span>
-                <span class="text-xs font-medium text-gray-600 dark:text-gray-400 mt-2">HTML5</span>
+                <span class="text-xs font-medium text-gray-600 dark:text-gray-400 text-center">HTML5</span>
               </li>
-              <li class="flex flex-col items-center justify-center aspect-square w-full max-w-[110px] mx-auto rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 hover:border-blue-600 transition-all duration-300 hover:scale-105">
-                <span class="flex items-center justify-center w-full h-full">
-                  <i class="devicon-tailwindcss-original colored text-4xl sm:text-5xl md:text-6xl"></i>
+              <li class="flex flex-col items-center justify-center rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-3 hover:border-blue-600 hover:shadow-md dark:hover:shadow-blue-900/30 transition-all duration-300 hover:scale-105 cursor-pointer">
+                <span class="flex items-center justify-center mb-2">
+                  <i class="devicon-tailwindcss-original colored text-4xl"></i>
                 </span>
-                <span class="text-xs font-medium text-gray-600 dark:text-gray-400 mt-2">Tailwind</span>
+                <span class="text-xs font-medium text-gray-600 dark:text-gray-400 text-center">Tailwind</span>
               </li>
-              <li class="flex flex-col items-center justify-center aspect-square w-full max-w-[110px] mx-auto rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 hover:border-blue-600 transition-all duration-300 hover:scale-105">
-                <span class="flex items-center justify-center w-full h-full">
-                  <i class="devicon-javascript-plain colored text-4xl sm:text-5xl md:text-6xl"></i>
+              <li class="flex flex-col items-center justify-center rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-3 hover:border-blue-600 hover:shadow-md dark:hover:shadow-blue-900/30 transition-all duration-300 hover:scale-105 cursor-pointer">
+                <span class="flex items-center justify-center mb-2">
+                  <i class="devicon-javascript-plain colored text-4xl"></i>
                 </span>
-                <span class="text-xs font-medium text-gray-600 dark:text-gray-400 mt-2">JavaScript</span>
+                <span class="text-xs font-medium text-gray-600 dark:text-gray-400 text-center">JavaScript</span>
               </li>
-              <li class="flex flex-col items-center justify-center aspect-square w-full max-w-[110px] mx-auto rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 hover:border-blue-600 transition-all duration-300 hover:scale-105">
-                <span class="flex items-center justify-center w-full h-full">
-                  <i class="devicon-symfony-original colored text-4xl sm:text-5xl md:text-6xl"></i>
+              <li class="flex flex-col items-center justify-center rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-3 hover:border-blue-600 hover:shadow-md dark:hover:shadow-blue-900/30 transition-all duration-300 hover:scale-105 cursor-pointer">
+                <span class="flex items-center justify-center mb-2">
+                  <i class="devicon-symfony-original colored text-4xl"></i>
                 </span>
-                <span class="text-xs font-medium text-gray-600 dark:text-gray-400 mt-2">Symfony</span>
+                <span class="text-xs font-medium text-gray-600 dark:text-gray-400 text-center">Symfony</span>
               </li>
-              <li class="flex flex-col items-center justify-center aspect-square w-full max-w-[110px] mx-auto rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 hover:border-blue-600 transition-all duration-300 hover:scale-105">
-                <span class="flex items-center justify-center w-full h-full">
-                  <i class="devicon-php-plain colored text-4xl sm:text-5xl md:text-6xl"></i>
+              <li class="flex flex-col items-center justify-center rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-3 hover:border-blue-600 hover:shadow-md dark:hover:shadow-blue-900/30 transition-all duration-300 hover:scale-105 cursor-pointer">
+                <span class="flex items-center justify-center mb-2">
+                  <i class="devicon-php-plain colored text-4xl"></i>
                 </span>
-                <span class="text-xs font-medium text-gray-600 dark:text-gray-400 mt-2">PHP (POO)</span>
+                <span class="text-xs font-medium text-gray-600 dark:text-gray-400 text-center">PHP (POO)</span>
               </li>
-              <li class="flex flex-col items-center justify-center aspect-square w-full max-w-[110px] mx-auto rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 hover:border-blue-600 transition-all duration-300 hover:scale-105">
-                <span class="flex items-center justify-center w-full h-full">
-                  <i class="devicon-mysql-plain colored text-4xl sm:text-5xl md:text-6xl"></i>
+              <li class="flex flex-col items-center justify-center rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-3 hover:border-blue-600 hover:shadow-md dark:hover:shadow-blue-900/30 transition-all duration-300 hover:scale-105 cursor-pointer">
+                <span class="flex items-center justify-center mb-2">
+                  <i class="devicon-mysql-plain colored text-4xl"></i>
                 </span>
-                <span class="text-xs font-medium text-gray-600 dark:text-gray-400 mt-2">MySQL</span>
+                <span class="text-xs font-medium text-gray-600 dark:text-gray-400 text-center">MySQL</span>
               </li>
-              <li class="flex flex-col items-center justify-center aspect-square w-full max-w-[110px] mx-auto rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 hover:border-blue-600 transition-all duration-300 hover:scale-105">
-                <span class="flex items-center justify-center w-full h-full">
-                  <i class="devicon-github-original text-4xl sm:text-5xl md:text-6xl dark:text-white"></i>
+              <li class="flex flex-col items-center justify-center rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-3 hover:border-blue-600 hover:shadow-md dark:hover:shadow-blue-900/30 transition-all duration-300 hover:scale-105 cursor-pointer">
+                <span class="flex items-center justify-center mb-2">
+                  <i class="devicon-github-original text-4xl dark:text-white"></i>
                 </span>
-                <span class="text-xs font-medium text-gray-600 dark:text-gray-400 mt-2">GitHub</span>
+                <span class="text-xs font-medium text-gray-600 dark:text-gray-400 text-center">GitHub</span>
               </li>
             </ul>
           </div>
           <!-- Je souhaite apprendre -->
           <div>
-            <h3 class="font-semibold text-purple-600 mb-8 flex items-center gap-4 justify-center md:justify-start">
-              <span class="h-2 w-2 rounded-full bg-purple-600 mr-4"></span>
-              <span class="block text-lg md:text-xl leading-tight">Je souhaite apprendre</span>
+            <h3 class="font-semibold text-purple-600 mb-6 inline-flex items-center gap-3">
+              <span class="h-3 w-3 rounded-full bg-purple-600"></span>
+              <span class="text-lg">Je souhaite apprendre</span>
             </h3>
-            <ul class="grid grid-cols-2 sm:grid-cols-3 gap-6">
-              <li class="flex flex-col items-center justify-center aspect-square w-full max-w-[110px] mx-auto rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 opacity-70 hover:opacity-100 transition-all">
-                <span class="flex items-center justify-center w-full h-full">
-                  <i class="devicon-typescript-plain colored text-4xl sm:text-5xl md:text-6xl"></i>
+            <ul class="grid grid-cols-3 gap-4">
+              <li class="flex flex-col items-center justify-center rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-3 opacity-60 hover:opacity-100 hover:border-purple-600 hover:shadow-md dark:hover:shadow-purple-900/30 transition-all duration-300 hover:scale-105 cursor-pointer">
+                <span class="flex items-center justify-center mb-2">
+                  <i class="devicon-typescript-plain colored text-4xl"></i>
                 </span>
-                <span class="text-xs font-medium mt-2">TypeScript</span>
+                <span class="text-xs font-medium text-gray-600 dark:text-gray-400 text-center">TypeScript</span>
               </li>
-              <li class="flex flex-col items-center justify-center aspect-square w-full max-w-[110px] mx-auto rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 opacity-70 hover:opacity-100 transition-all">
-                <span class="flex items-center justify-center w-full h-full">
-                  <i class="devicon-docker-plain colored text-4xl sm:text-5xl md:text-6xl"></i>
+              <li class="flex flex-col items-center justify-center rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-3 opacity-60 hover:opacity-100 hover:border-purple-600 hover:shadow-md dark:hover:shadow-purple-900/30 transition-all duration-300 hover:scale-105 cursor-pointer">
+                <span class="flex items-center justify-center mb-2">
+                  <i class="devicon-docker-plain colored text-4xl"></i>
                 </span>
-                <span class="text-xs font-medium mt-2">Docker</span>
+                <span class="text-xs font-medium text-gray-600 dark:text-gray-400 text-center">Docker</span>
               </li>
-              <li class="flex flex-col items-center justify-center aspect-square w-full max-w-[110px] mx-auto rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 opacity-70 hover:opacity-100 transition-all">
-                <span class="flex items-center justify-center w-full h-full">
-                  <i class="devicon-react-original colored text-4xl sm:text-5xl md:text-6xl"></i>
+              <li class="flex flex-col items-center justify-center rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-3 opacity-60 hover:opacity-100 hover:border-purple-600 hover:shadow-md dark:hover:shadow-purple-900/30 transition-all duration-300 hover:scale-105 cursor-pointer">
+                <span class="flex items-center justify-center mb-2">
+                  <i class="devicon-react-original colored text-4xl"></i>
                 </span>
-                <span class="text-xs font-medium mt-2">React</span>
+                <span class="text-xs font-medium text-gray-600 dark:text-gray-400 text-center">React</span>
               </li>
             </ul>
           </div>
@@ -265,13 +260,13 @@
           <article class="flex flex-col rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-6 shadow-sm hover:shadow-md transition">
             <div class="flex items-center gap-3 mb-4">
               <span class="p-2 bg-blue-100 dark:bg-blue-900/30 rounded-lg text-blue-600">🤖</span>
-              <h3 class="font-bold text-xl">IA Générative & Développement</h3>
+              <h3 class="font-bold text-xl">Impact de l'IA sur les développeurs juniors</h3>
             </div>
             <p class="text-sm text-gray-600 dark:text-gray-400 flex-grow">
-              Analyse de l'intégration des LLM dans le cycle de vie logiciel (SDLC) et l'évolution du rôle du développeur face aux agents autonomes.
+              Étude de l'impact de l'IA générative sur la formation, le recrutement et les compétences requises des développeurs juniors en 2026. Analyse des outils comme GitHub Copilot et leur importance dans le secteur.
             </p>
             <div class="mt-6 pt-6 border-t border-gray-100 dark:border-gray-800 flex justify-between items-center">
-              <span class="text-xs font-medium px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded">Flux RSS / LinkedIn</span>
+              <span class="text-xs font-medium px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded">Google Alerts / Recherche</span>
               <a href="veille.html" class="text-blue-600 font-semibold text-sm hover:underline">Consulter la veille →</a>
             </div>
           </article>
@@ -301,7 +296,7 @@
         <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <article class="group relative rounded-2xl border border-gray-200 dark:border-gray-800 overflow-hidden hover:shadow-lg transition">
             <div class="aspect-video bg-gray-100 dark:bg-gray-900 flex items-center justify-center">
-              <img src="/IMG/sialou.png" alt="Aperçu du projet Sialou Market" class="max-w-full max-h-full object-contain transition-transform duration-300 group-hover:scale-105">
+              <img src="IMG/sialou.png" alt="Aperçu du projet Sialou Market" class="max-w-full max-h-full object-contain transition-transform duration-300 group-hover:scale-105">
             </div>
             <div class="p-5">
               <h3 class="font-semibold group-hover:text-blue-600 transition">

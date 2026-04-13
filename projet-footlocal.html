@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Projet Foot-Local — BOURGOIN RALPH</title>
+    <meta name="description" content="Documentation du projet Foot-Local : Application de gestion de clubs de football avec Symfony et React." />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💼</text></svg>">
+    <style>
+      /* Animation du menu hamburger */
+      #menuBtn.active #bar1 {
+        transform: rotate(45deg) translate(6px, 6px);
+      }
+      #menuBtn.active #bar2 {
+        opacity: 0;
+      }
+      #menuBtn.active #bar3 {
+        transform: rotate(-45deg) translate(6px, -6px);
+      }
+    </style>
+  </head>
+  <body id="top" class="bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100">
+    <!-- Header / Nav -->
+    <header class="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/90 dark:supports-[backdrop-filter]:bg-gray-950/70 dark:bg-gray-950/90 border-b border-gray-200 dark:border-gray-800">
+      <nav class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <a href="index.html" class="font-extrabold tracking-tight text-xl">
+            <span class="text-blue-600">Portfolio</span><span class="text-gray-900 dark:text-gray-100"> BOURGOIN RALPH </span>
+          </a>
+
+          <!-- Menu hamburger mobile -->
+          <button id="menuBtn" class="md:hidden p-2 -mr-2">
+            <div class="w-6 h-5 relative flex flex-col justify-between">
+              <span id="bar1" class="w-full h-0.5 bg-gray-600 dark:bg-gray-300 transition-all duration-300"></span>
+              <span id="bar2" class="w-full h-0.5 bg-gray-600 dark:bg-gray-300 transition-all duration-300"></span>
+              <span id="bar3" class="w-full h-0.5 bg-gray-600 dark:bg-gray-300 transition-all duration-300"></span>
+            </div>
+          </button>
+
+          <!-- Menu desktop -->
+          <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
+            <li><a class="nav-link hover:text-blue-600" href="index.html#a-propos">Mon profil</a></li>
+            <li><a class="nav-link hover:text-blue-600" href="index.html#mon-bts">Mon BTS</a></li>
+            <li><a class="nav-link hover:text-blue-600" href="index.html#langages-outils">Langages & Outils</a></li>
+            <li><a class="nav-link hover:text-blue-600" href="index.html#parcours">Parcours scolaire</a></li>
+            <li><a class="nav-link hover:text-blue-600" href="index.html#veille">Veille technologique</a></li>
+            <li><a class="nav-link hover:text-blue-600" href="index.html#projets">Projets</a></li>
+          </ul>
+
+          <!-- Menu mobile -->
+          <div id="mobileMenu" class="hidden md:hidden absolute top-full left-0 right-0 bg-white dark:bg-gray-950 border-b border-gray-200 dark:border-gray-800 shadow-lg z-50">
+            <nav class="px-4 py-4 space-y-3">
+              <a href="index.html#a-propos" class="block py-2 px-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors nav-link-mobile">Mon profil</a>
+              <a href="index.html#mon-bts" class="block py-2 px-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors nav-link-mobile">Mon BTS</a>
+              <a href="index.html#langages-outils" class="block py-2 px-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors nav-link-mobile">Langages & Outils</a>
+              <a href="index.html#parcours" class="block py-2 px-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors nav-link-mobile">Parcours scolaire</a>
+              <a href="index.html#veille" class="block py-2 px-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors nav-link-mobile">Veille technologique</a>
+              <a href="index.html#projets" class="block py-2 px-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors nav-link-mobile">Projets</a>
+            </nav>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="bg-gray-50 dark:bg-gray-900/50 min-h-screen">
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-16">
+        <div class="flex items-baseline justify-between">
+            <h1 class="text-3xl font-bold tracking-tight">Projet : Foot-Local</h1>
+            <a href="projets.html" class="text-sm text-blue-600 hover:underline">← Retour aux projets</a>
+        </div>
+
+        <div class="mt-4 mb-8">
+            <p class="text-xl text-amber-600 dark:text-amber-400 font-medium italic">
+                📝 Documentation complète à venir...
+            </p>
+        </div>
+
+        <div class="mt-8 space-y-10">
+            <article class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-6">
+                <h2 class="text-xl font-semibold mb-3">Aperçu du projet</h2>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                    Application complète de gestion de clubs de football avec API REST Symfony et interface React moderne.
+                </p>
+                <div class="aspect-video rounded-lg border border-gray-200 dark:border-gray-800 bg-gradient-to-br from-green-50 to-blue-50 dark:from-green-950/40 dark:to-blue-950/40 flex items-center justify-center">
+                    <span class="text-6xl">⚽</span>
+                </div>
+            </article>
+
+            <article class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-6">
+                <h2 class="text-xl font-semibold mb-3">Description du projet</h2>
+                <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+                    Foot-Local est une application web complète de gestion de clubs de football. Elle comprend un backend API REST développé avec Symfony 7.x et une interface frontend moderne réalisée avec React 18 et Vite.
+                </p>
+                <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                    L'application permet de gérer les clubs, leurs joueurs, les matches et les tournois avec un système d'authentification JWT sécurisé.
+                </p>
+
+                <div class="mt-6 pt-6 border-t border-gray-200 dark:border-gray-800">
+                    <h3 class="font-semibold mb-4 text-base">Lien du projet</h3>
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <a href="https://github.com/raphaelRENZ/ap2-FOOT-LOCAL.git" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-lg bg-blue-600 text-white px-4 py-2 font-medium text-sm hover:bg-blue-700 transition">
+                            Voir le dépôt GitHub
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-6">
+                <h2 class="text-xl font-semibold mb-3">Technologies utilisées</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="font-semibold text-lg mb-3 text-blue-600">Backend</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2">
+                                <i class="devicon-symfony-original colored text-lg"></i>
+                                <span class="text-sm">Symfony 7.x</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="devicon-php-plain colored text-lg"></i>
+                                <span class="text-sm">PHP 8.1+</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="devicon-mysql-plain colored text-lg"></i>
+                                <span class="text-sm">SQLite</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-3 text-purple-600">Frontend</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2">
+                                <i class="devicon-react-original colored text-lg"></i>
+                                <span class="text-sm">React 18</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="devicon-vitejs-original colored text-lg"></i>
+                                <span class="text-sm">Vite 7.3</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-200 dark:border-gray-800">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8 text-sm text-gray-600 dark:text-gray-400 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p>© <span id="year"></span> — Portfolio BTS SIO SLAM</p>
+        <p><a href="#top" class="hover:underline">Haut de page ↑</a></p>
+      </div>
+    </footer>
+    <script src="/dist/ASSET /main.js" defer></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Projet LIBRAIRIE — BOURGOIN RALPH</title>
+    <meta name="description" content="Documentation détaillée du projet d'application web de gestion de livres avec PHP et MySQL." />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💼</text></svg>">
+    <style>
+      /* Animation du menu hamburger */
+      #menuBtn.active #bar1 {
+        transform: rotate(45deg) translate(6px, 6px);
+      }
+      #menuBtn.active #bar2 {
+        opacity: 0;
+      }
+      #menuBtn.active #bar3 {
+        transform: rotate(-45deg) translate(6px, -6px);
+      }
+    </style>
+  </head>
+  <body id="top" class="bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100">
+    <!-- Header / Nav -->
+    <header class="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/90 dark:supports-[backdrop-filter]:bg-gray-950/70 dark:bg-gray-950/90 border-b border-gray-200 dark:border-gray-800">
+      <nav class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <a href="index.html" class="font-extrabold tracking-tight text-xl">
+            <span class="text-blue-600">Portfolio</span><span class="text-gray-900 dark:text-gray-100"> BOURGOIN RALPH </span>
+          </a>
+
+          <!-- Menu hamburger mobile -->
+          <button id="menuBtn" class="md:hidden p-2 -mr-2">
+            <div class="w-6 h-5 relative flex flex-col justify-between">
+              <span id="bar1" class="w-full h-0.5 bg-gray-600 dark:bg-gray-300 transition-all duration-300"></span>
+              <span id="bar2" class="w-full h-0.5 bg-gray-600 dark:bg-gray-300 transition-all duration-300"></span>
+              <span id="bar3" class="w-full h-0.5 bg-gray-600 dark:bg-gray-300 transition-all duration-300"></span>
+            </div>
+          </button>
+
+          <!-- Menu desktop -->
+          <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
+            <li><a class="nav-link hover:text-blue-600" href="index.html#a-propos">Mon profil</a></li>
+            <li><a class="nav-link hover:text-blue-600" href="index.html#mon-bts">Mon BTS</a></li>
+            <li><a class="nav-link hover:text-blue-600" href="index.html#langages-outils">Langages & Outils</a></li>
+            <li><a class="nav-link hover:text-blue-600" href="index.html#parcours">Parcours scolaire</a></li>
+            <li><a class="nav-link hover:text-blue-600" href="index.html#veille">Veille technologique</a></li>
+            <li><a class="nav-link hover:text-blue-600" href="index.html#projets">Projets</a></li>
+          </ul>
+
+          <!-- Menu mobile -->
+          <div id="mobileMenu" class="hidden md:hidden absolute top-full left-0 right-0 bg-white dark:bg-gray-950 border-b border-gray-200 dark:border-gray-800 shadow-lg z-50">
+            <nav class="px-4 py-4 space-y-3">
+              <a href="index.html#a-propos" class="block py-2 px-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors nav-link-mobile">Mon profil</a>
+              <a href="index.html#mon-bts" class="block py-2 px-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors nav-link-mobile">Mon BTS</a>
+              <a href="index.html#langages-outils" class="block py-2 px-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors nav-link-mobile">Langages & Outils</a>
+              <a href="index.html#parcours" class="block py-2 px-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors nav-link-mobile">Parcours scolaire</a>
+              <a href="index.html#veille" class="block py-2 px-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors nav-link-mobile">Veille technologique</a>
+              <a href="index.html#projets" class="block py-2 px-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors nav-link-mobile">Projets</a>
+            </nav>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="bg-gray-50 dark:bg-gray-900/50 min-h-screen">
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-16">
+        <div class="flex items-baseline justify-between">
+            <h1 class="text-3xl font-bold tracking-tight">Projet : LIBRAIRIE - Gestion de Livres</h1>
+            <a href="projets.html" class="text-sm text-blue-600 hover:underline">← Retour aux projets</a>
+        </div>
+        
+        <div class="mt-8 space-y-10">
+            <article class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-6">
+                <h2 class="text-xl font-semibold mb-3">Aperçu du projet</h2>
+                <div class="aspect-video rounded-lg border border-gray-200 dark:border-gray-800 bg-gradient-to-br from-yellow-50 to-orange-50 dark:from-yellow-950/40 dark:to-orange-950/40 flex items-center justify-center">
+                    <span class="text-6xl">📚</span>
+                </div>
+            </article>
+
+            <article class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-6">
+                <h2 class="text-xl font-semibold mb-3">Description du projet</h2>
+                <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                    Ce projet est une application web simple de gestion de livres, permettant aux utilisateurs de s'inscrire, de se connecter, et de gérer une liste de leurs livres favoris. L'application est développée en PHP avec une base de données MySQL et utilise PDO pour les interactions avec la base de données. L'interface utilisateur est stylisée avec CSS pour une expérience moderne et réactive.
+                </p>
+            </article>
+
+            <article class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-6">
+                <h2 class="text-xl font-semibold mb-3">Fonctionnalités</h2>
+                <ul class="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2">
+                    <li><strong>Inscription des utilisateurs :</strong> Création de comptes avec nom d'utilisateur, e-mail et mot de passe sécurisé.</li>
+                    <li><strong>Connexion des utilisateurs :</strong> Accès sécurisé aux comptes enregistrés.</li>
+                    <li><strong>Gestion des favoris :</strong> Consultation et suppression de livres de la liste personnelle.</li>
+                    <li><strong>Navigation :</strong> Barre de navigation pour accéder aux différentes sections de l'application.</li>
+                    <li><strong>Interface Utilisateur :</strong> Design simple, moderne et réactif avec CSS.</li>
+                </ul>
+            </article>
+
+            <article class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-6">
+                <h2 class="text-xl font-semibold mb-3">Technologies utilisées</h2>
+                <div class="flex flex-wrap gap-3 text-sm">
+                    <span class="flex items-center gap-2 rounded-md border px-3 py-2"><i class="devicon-php-plain colored text-xl"></i> PHP</span>
+                    <span class="flex items-center gap-2 rounded-md border px-3 py-2"><i class="devicon-mysql-plain colored text-xl"></i> MySQL/MariaDB</span>
+                    <span class="flex items-center gap-2 rounded-md border px-3 py-2">PDO</span>
+                    <span class="flex items-center gap-2 rounded-md border px-3 py-2"><i class="devicon-html5-plain colored text-xl"></i> HTML5</span>
+                    <span class="flex items-center gap-2 rounded-md border px-3 py-2"><i class="devicon-css3-plain colored text-xl"></i> CSS3</span>
+                </div>
+                <div class="mt-6 pt-6 border-t border-gray-200 dark:border-gray-800">
+                    <h3 class="font-semibold mb-3 text-base">Code Source</h3>
+                    <a href="https://github.com/RALPHASSANE/APP-LIBRAIRI.git" target="_blank" rel="noopener noreferrer" class="inline-block rounded-lg bg-gray-100 dark:bg-gray-800 px-3 py-1 font-medium text-sm hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+                        Voir sur GitHub 
+                    </a>
+                </div>
+            </article>
+
+            <article class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-6">
+                <h2 class="text-xl font-semibold mb-3">Structure du Code</h2>
+                <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                    Le projet est organisé avec des fichiers dédiés pour la gestion de la base de données, l'authentification des utilisateurs et les différentes pages de l'application :
+                </p>
+                <ul class="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-1 mt-2">
+                    <li><code>database.php</code> : Gère la connexion à la base de données MySQL en utilisant PDO.</li>
+                    <li><code>user.php</code> : Contient la classe `User` pour la logique d'authentification.</li>
+                    <li><code>inscription.php</code> : Gère le processus d'inscription des nouveaux utilisateurs.</li>
+                    <li><code>mes_favoris.php</code> : Affiche et gère la liste des livres favoris de l'utilisateur.</li>
+                    <li><code>style.css</code> : Fichier de style CSS pour l'ensemble de l'application.</li>
+                    <li>Autres fichiers (<code>index.php</code>, <code>accueil.php</code>, <code>profil.php</code>, <code>logout.php</code>) : Gèrent les pages principales de l'application.</li>
+                </ul>
+                <p class="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed">
+                    Ce projet a permis de renforcer la maîtrise du développement web côté serveur avec PHP et MySQL, la gestion des sessions utilisateurs et l'interaction avec une base de données via PDO.
+                </p>
+            </article>
+        </div>
+      </div>
+    </main>
+
+    <footer class="border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8 text-sm text-gray-600 dark:text-gray-400 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p>© <span id="year"></span> — Portfolio BTS SIO SLAM</p>
+        <p><a href="#top" class="hover:underline">Haut de page ↑</a></p>
+      </div>
+    </footer>
+    <script src="/dist/ASSET /main.js" defer></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </body>
+</html>

@@ -84,20 +84,24 @@
             <article class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-6">
                 <h2 class="text-xl font-semibold mb-3">Aperçu du projet</h2>
                 <p class="text-gray-600 dark:text-gray-300 mb-4">
-                    Application complète de gestion de clubs de football avec API REST Symfony et interface React moderne.
-                </p>
-                <div class="aspect-video rounded-lg border border-gray-200 dark:border-gray-800 bg-gradient-to-br from-green-50 to-blue-50 dark:from-green-950/40 dark:to-blue-950/40 flex items-center justify-center">
-                    <span class="text-6xl">⚽</span>
+                    Foot-Local est un système de gestion de clubs de football complet. 
+                <div class="grid gap-4 sm:grid-cols-3">
+                    <img src="IMG/club.png" alt="Liste des clubs" class="h-48 w-full rounded-2xl border border-gray-200 dark:border-gray-800 object-cover" />
+                    <img src="IMG/contact.png" alt="Écran de connexion" class="h-48 w-full rounded-2xl border border-gray-200 dark:border-gray-800 object-cover" />
+                    <img src="IMG/tournois.png" alt="Vue des tournois" class="h-48 w-full rounded-2xl border border-gray-200 dark:border-gray-800 object-cover" />
                 </div>
             </article>
 
             <article class="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 p-6">
                 <h2 class="text-xl font-semibold mb-3">Description du projet</h2>
                 <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
-                    Foot-Local est une application web complète de gestion de clubs de football. Elle comprend un backend API REST développé avec Symfony 7.x et une interface frontend moderne réalisée avec React 18 et Vite.
+                    Foot-Local permet de gérer les clubs, les joueurs, les matches et les tournois via une API REST sécurisée. Le backend utilise Symfony 7.x, SQLite et LexikJWTAuthenticationBundle pour l'authentification JWT.
+                </p>
+                <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+                    Le frontend React 18, construit avec Vite, propose une interface moderne pour la consultation des clubs, la gestion des favoris et la navigation entre les matchs et les tournois.
                 </p>
                 <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                    L'application permet de gérer les clubs, leurs joueurs, les matches et les tournois avec un système d'authentification JWT sécurisé.
+                    Le projet illustre la connexion entre une API Symfony et une application React, avec des fonctionnalités de login, d'inscription, de favoris et de consultation sécurisée des données.
                 </p>
 
                 <div class="mt-6 pt-6 border-t border-gray-200 dark:border-gray-800">
@@ -116,7 +120,7 @@
                     <div>
                         <h3 class="font-semibold text-lg mb-3 text-blue-600">Backend</h3>
                         <ul class="space-y-2">
-                            <li class="flex items-center gap-2">
+                                    <li class="flex items-center gap-2">
                                 <i class="devicon-symfony-original colored text-lg"></i>
                                 <span class="text-sm">Symfony 7.x</span>
                             </li>
@@ -125,8 +129,11 @@
                                 <span class="text-sm">PHP 8.1+</span>
                             </li>
                             <li class="flex items-center gap-2">
-                                <i class="devicon-mysql-plain colored text-lg"></i>
+                                <i class="devicon-sqlite-plain colored text-lg"></i>
                                 <span class="text-sm">SQLite</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-sm">LexikJWTAuthenticationBundle</span>
                             </li>
                         </ul>
                     </div>

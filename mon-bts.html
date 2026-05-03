@@ -20,7 +20,7 @@
       }
     </style>
   </head>
-  <body class="bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100">
+  <body id="top" class="bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100">
     <header class="sticky top-0 z-40 backdrop-blur bg-white/90 dark:bg-gray-950/90 border-b border-gray-200 dark:border-gray-800">
       <nav class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
@@ -250,3 +250,15 @@
     
   </div>
 </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-200 dark:border-gray-800">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-8 text-sm text-gray-600 dark:text-gray-400 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p>© <span id="year"></span> — Portfolio BTS SIO SLAM</p>
+        <p><a href="#top" class="hover:underline">Haut de page ↑</a></p>
+      </div>
+    </footer>
+
+    <script>document.getElementById('year')?.textContent = new Date().getFullYear();</script>
+  </body>
+</html>

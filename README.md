@@ -1,5 +1,5 @@
 # 👨‍💻 Portfolio - BTS SIO Option SLAM
-> **Ralph BOURGOIN** - Étudiant en Solutions Logicielles et Applications Métier à l'IPSSI.
+> **Ralph BOURGOIN** - Étudiant  à l'IPSSI.
 
 Ce dépôt contient le code source de mon portfolio professionnel, réalisé dans le cadre de l'épreuve **E5** du BTS SIO. Il centralise mes projets, mon parcours ainsi que ma veille technologique.
 
@@ -39,8 +39,7 @@ Ce dépôt contient le code source de mon portfolio professionnel, réalisé dan
 ---
 
 ## 📧 Me contacter
-
-- **LinkedIn :** [Lien vers ton profil]
+-**Email :** [ralph.bourgoin@ecole-ipssi.net](mailto:ralph.bourgoin@ecole-ipssi.net)
 - **GitHub :** [@RALPHASSANE](https://github.com/RALPHASSANE)
 - **Portfolio :** [https://ralphassane.github.io/portfolio-bts/](https://ralphassane.github.io/portfolio-bts/)
 
